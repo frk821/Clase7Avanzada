@@ -20,7 +20,11 @@ export class ServidorAPI{
     }
 
     atenderPeticiones(){
+
+        this.app.use(express.json())
+
         this.app.use('/',rutasPersonalizadas)
+    
 
     }
 
